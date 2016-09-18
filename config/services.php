@@ -38,11 +38,11 @@ return [
     'facebook' => [
         'client_id' => env('FB_CLIENT_ID'),
         'client_secret' => env('FB_CLIENT_SECRET'),
-        'redirect' => config('app.url')."/".(env('FB_CALLBACK_URL')),
+        'redirect' => env('FB_CALLBACK_URL'),
     ],
     'google' => [
         'client_id' => env('GOOGLE_CLIENT_ID'),
         'client_secret' => env('GOOGLE_CLIENT_SECRET'),
-        'redirect' => config('app.url')."/".(env('GOOGLE_CALLBACK_URL')),
+        'redirect' => env('GOOGLE_CALLBACK_URL'),
     ]
 ];
